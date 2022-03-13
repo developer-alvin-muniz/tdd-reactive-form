@@ -5,7 +5,8 @@ import {OrderFormComponent} from "./order-form/order-form.component";
 
 const routes: Routes = [
   {path: '',component: HomePageComponent},
-  {path: 'order-form',component: OrderFormComponent}
+  {path: 'order-form',component: OrderFormComponent},
+  {path: '**',redirectTo: ''}
 
 
   // TODO define a route for the coffee form.

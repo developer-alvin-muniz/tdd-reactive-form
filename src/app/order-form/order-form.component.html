@@ -1,1 +1,44 @@
-<p>order-form works!</p>
+<!-- TODO Create an order form that takes in the following input-->
+<!-- Name as a text field, A drop down with 3 options [Coffee, Lattee, Tea],-->
+<!-- A radial size selection field -->
+<!-- A text field for an email address field -->
+<!-- A notes fields that takes in a text input -->
+<form>
+  <ul class="form-style-1">
+
+    <li><label>Name<span class="required">*</span></label>
+      <input type="text"
+             name="field1" class="field-divided"/>
+    </li>
+    <li>
+      <label>Email <span class="required">*</span></label>
+      <input type="email" name="field3" class="field-long"/>
+    </li>
+
+    <li>
+      <label>What would you like to order?</label>
+      <select name="field4" class="field-select">
+        <option value="Coffee">Coffee</option>
+        <option value="Latte">Latte</option>
+        <option value="Tea">Tea</option>
+      </select>
+    </li>
+
+    <br>
+
+    <input type="radio" name="size" value="small"> Small
+    <input type="radio" name="size" value="medium"> Medium
+    <input type="radio" name="size" value="large"> Large
+
+    <li>
+      <label>Notes <span class="required">*</span></label>
+      <textarea name="field5" id="field5"
+                class="field-long field-textarea"></textarea>
+    </li>
+    <li>
+      <input type="submit" value="Submit"/>
+    </li>
+  </ul>
+
+
+</form>
