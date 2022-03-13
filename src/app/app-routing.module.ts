@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomePageComponent} from "./home-page/home-page.component";
+import {OrderFormComponent} from "./order-form/order-form.component";
 
 const routes: Routes = [
-  {path: '',component: HomePageComponent}
+  {path: '',component: HomePageComponent},
+  {path: 'order-form',component: OrderFormComponent}
+
 
   // TODO define a route for the coffee form.
   // The path should be order-form it should point to the order form component
