@@ -1,6 +1,5 @@
 <form
-  [formGroup]="orderForm"
->
+  [formGroup]="orderForm">
   <ul class="form-style-1">
 
     <li><label>Name<span class="required">*</span></label>
@@ -40,9 +39,9 @@
                 class="field-long field-textarea"></textarea>
     </li>
     <li>
-      <input [disabled]="!orderForm.valid"
+      <button [disabled]="!orderForm.valid"
              (click)="displayConfirmation()"
-             type="submit" value="Submit"/>
+              type="submit" value="Submit">Submit</button>
     </li>
   </ul>
 
