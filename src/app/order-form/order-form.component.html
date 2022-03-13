@@ -1,9 +1,12 @@
 <form
-  [formGroup]="orderForm">
+  [formGroup]="orderForm"
+    id="order-form"
+>
   <ul class="form-style-1">
 
     <li><label>Name<span class="required">*</span></label>
       <input
+        id="name-field"
         required
         formControlName="name"
         type="text"
@@ -12,13 +15,16 @@
     <li>
       <label>Email <span class="required">*</span></label>
       <input
+        id="email-field"
         formControlName="email"
         type="email" name="field3" class="field-long"/>
     </li>
 
     <li>
       <label>What would you like to order?</label>
-      <select required formControlName="item" name="field4"
+      <select
+        id="item-field"
+        required formControlName="item" name="field4"
                        class="field-select">
         <option value="Coffee">Coffee</option>
         <option value="Latte">Latte</option>
@@ -28,14 +34,18 @@
 
     <br>
 
-    <input formControlName="size" type="radio" name="size" value="small"> Small
-    <input formControlName="size" type="radio" name="size" value="medium">
+    <input         id="small-size-field"formControlName="size" type="radio"
+                   name="size" value="small"> Small
+    <input id="medium-size-field" formControlName="size" type="radio"
+           name="size" value="medium">
     Medium
-    <input formControlName="size" type="radio" name="size" value="large"> Large
+    <input id="large-size-field" formControlName="size" type="radio"
+           name="size" value="large"> Large
 
     <li>
       <label>Notes</label>
-      <textarea formControlName="notes" name="field5" id="field5"
+      <textarea formControlName="notes" name="field5"
+                id="notes-field"
                 class="field-long field-textarea"></textarea>
     </li>
     <li>
